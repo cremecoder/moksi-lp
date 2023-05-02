@@ -1,4 +1,4 @@
-/* Reset */
+/* RESET */
 *,
 *::before,
 *::after {
@@ -53,10 +53,26 @@
 }
 
 /* iPad */
-/* @media(min-width:768px) {} */
+@media (min-width: 768px) {
+  :root {
+    --fz-xl: 14rem;
+    --fz-lg: 3.2rem;
+    --fz-md: 2.6rem;
+    --fz-rg: 1.8rem;
+    --fz-sm: 1rem;
+  }
+}
 
 /* iPad Pro */
-/* @media(min-width:1024px) {} */
+@media (min-width: 1024px) {
+  :root {
+    --fz-xl: 18rem;
+    --fz-lg: 4rem;
+    --fz-md: 3.1rem;
+    --fz-rg: 2rem;
+    --fz-sm: 1rem;
+  }
+}
 
 /* BODY ==============================  */
 body {
@@ -94,6 +110,15 @@ header p span {
   display: block;
 }
 
+@media (min-width: 712px) {
+  header h1 {
+    margin-bottom: 60px;
+  }
+  header p {
+    margin-bottom: 60px;
+  }
+}
+
 /* VIDEO ==============================  */
 .video {
   /* background-color: yellow; */
@@ -113,6 +138,30 @@ header p span {
 @media (min-width: 712px) {
   .video {
     height: 425px;
+  }
+}
+
+@media (min-width: 840px) {
+  .video {
+    height: 500px;
+  }
+}
+
+@media (min-width: 980px) {
+  .video {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video {
+    height: 700px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .video {
+    height: 800px;
   }
 }
 
@@ -148,6 +197,30 @@ header p span {
   }
 }
 
+@media (min-width: 712px) {
+  .content {
+    padding: 75px 15px;
+  }
+  .content h2 {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding: 90px 15px;
+  }
+  .content h2 {
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content h2 {
+    margin-bottom: 90px;
+  }
+}
+
 /* CONTACT ============================== */
 .contact {
   color: var(--moksi-orange-lt);
@@ -178,12 +251,30 @@ header p span {
   }
 }
 
+@media (min-width: 712px) {
+  .contact {
+    padding: 75px 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact {
+    padding: 90px 15px;
+  }
+}
+
 /* FOOTER ============================== */
 footer {
   background-color: var(--moksi-blue);
   color: var(--moksi-orange);
   padding: 15px;
   text-align: left;
+}
+
+footer .container {
+  margin-left: auto;
+  margin-right: auto;
+  /* max-width: 700px; */
 }
 
 footer .flex {
@@ -201,4 +292,22 @@ footer .flex h2 {
 footer span {
   font-size: var(--fz-sm);
   font-family: var(--vary-light);
+}
+
+@media (min-width: 712px) {
+  footer .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 768px) {
+  footer .container {
+    width: 700px;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer .container {
+    width: 900px;
+  }
 }
