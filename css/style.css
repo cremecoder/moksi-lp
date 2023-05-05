@@ -122,47 +122,113 @@ header p span {
 /* VIDEO ==============================  */
 .video {
   /* background-color: yellow; */
-  padding: 3rem;
-  background-image: url("../images/screenshot-test-image.png");
+  /* padding: 3rem;
+  background-image: url("../assets/images/Artboard\ 3@2x.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 200px;
+  background-size: cover; 
+  height: 200px; */
+}
+
+.embla {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--moksi-blue);
+}
+.embla__container {
+  display: flex;
+  /* height: 500px; */
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  height: 100%;
+}
+.embla__slide > img {
+  max-width: 100%;
+}
+
+@media (min-width: 375px) {
+  /* .video {
+    height: 225px;
+  } */
+  /* .embla {
+    height: 475px;
+  } */
 }
 
 @media (min-width: 414px) {
-  .video {
+  /* .video {
     height: 225px;
-  }
+  } */
 }
 
 @media (min-width: 712px) {
-  .video {
-    height: 425px;
+  .embla__slide {
+    flex: 0 0 75%;
+    min-width: 0;
+    height: 100%;
+  }
+}
+
+@media (min-width: 736px) {
+  .embla__slide {
+    flex: 0 0 75%;
+    min-width: 0;
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 50%;
+    min-width: 0;
+    height: 100%;
   }
 }
 
 @media (min-width: 840px) {
-  .video {
-    height: 500px;
+  .embla__slide {
+    flex: 0 0 50%;
+    min-width: 0;
+    height: 100%;
   }
 }
 
 @media (min-width: 980px) {
-  .video {
-    height: 600px;
+  .embla__slide {
+    flex: 0 0 50%;
+    min-width: 0;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .embla__slide {
+    flex: 0 0 50%;
+    min-width: 0;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1138px) {
+  .embla__slide {
+    flex: 0 0 25%;
+    min-width: 0;
+    height: 100%;
   }
 }
 
 @media (min-width: 1200px) {
-  .video {
+  /* .video {
     height: 700px;
-  }
+  } */
 }
 
 @media (min-width: 1400px) {
-  .video {
+  /* .video {
     height: 800px;
-  }
+  } */
 }
 
 /* CONTENT ============================== */

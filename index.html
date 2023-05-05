@@ -16,8 +16,19 @@
             <span>studio based in Liverpool.</span>
         </p>
     </header>
-    <section class="section video">
-    </section>
+    <!-- <section class="section video">
+    </section> -->
+    <div class="embla mobile">
+        <div class="embla__container">
+          <div class="embla__slide"><img src="./assets/images/Artboard 3 copy 2@2x.png" alt=""></div>
+          <div class="embla__slide"><img src="./assets/images/Artboard 3 copy 3@2x.png" alt=""></div>
+          <div class="embla__slide"><img src="./assets/images/Artboard 3 copy 4@2x.png" alt=""></div>
+          <div class="embla__slide"><img src="./assets/images/Artboard 3 copy 5@2x.png" alt=""></div>
+          <div class="embla__slide"><img src="./assets/images/Artboard 3 copy 6@2x.png" alt=""></div>
+          <div class="embla__slide"><img src="./assets/images/Artboard 3 copy@2x.png" alt=""></div>
+          <div class="embla__slide"><img src="./assets/images/Artboard 3@2x.png" alt=""></div>
+        </div>
+    </div>
     <section class="section content">
         <h2>
             <span>WE MAKE GREAT THINGS*</span>
@@ -60,4 +71,25 @@
         </div>
     </footer>
 </body>
+<!-- <script type="module" src="./js/script.js"></script> -->
+<script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+<script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
+
+<!-- <script type="text/javascript">
+    var emblaNode = document.querySelector('.embla')
+    var options = { loop: false }
+  
+    var embla = EmblaCarousel(emblaNode, options)
+</script> -->
+
+<script type="text/javascript">
+    var emblaNode = document.querySelector('.embla')
+    var options = { loop: true }
+    var plugins = [EmblaCarouselAutoplay()] // Plugins
+  
+    var embla = EmblaCarousel(emblaNode, options, plugins)
+    console.log(embla.slideNodes()) // Access API
+</script>
+  
+  
 </html>
