@@ -84,7 +84,6 @@ body {
 
 .section {
   flex-grow: 1;
-  /* padding: 15px; */
 }
 
 /* HEADER ==============================  */
@@ -119,16 +118,7 @@ header p span {
   }
 }
 
-/* VIDEO ==============================  */
-.video {
-  /* background-color: yellow; */
-  /* padding: 3rem;
-  background-image: url("../assets/images/Artboard\ 3@2x.png");
-  background-repeat: no-repeat;
-  background-size: cover; 
-  height: 200px; */
-}
-
+/* SLIDER ==============================  */
 .embla {
   display: block;
   overflow: hidden;
@@ -137,7 +127,6 @@ header p span {
 }
 .embla__container {
   display: flex;
-  /* height: 500px; */
 }
 .embla__slide {
   flex: 0 0 100%;
@@ -146,21 +135,6 @@ header p span {
 }
 .embla__slide > img {
   max-width: 100%;
-}
-
-@media (min-width: 375px) {
-  /* .video {
-    height: 225px;
-  } */
-  /* .embla {
-    height: 475px;
-  } */
-}
-
-@media (min-width: 414px) {
-  /* .video {
-    height: 225px;
-  } */
 }
 
 @media (min-width: 712px) {
@@ -217,18 +191,6 @@ header p span {
     min-width: 0;
     height: 100%;
   }
-}
-
-@media (min-width: 1200px) {
-  /* .video {
-    height: 700px;
-  } */
-}
-
-@media (min-width: 1400px) {
-  /* .video {
-    height: 800px;
-  } */
 }
 
 /* CONTENT ============================== */
@@ -311,16 +273,25 @@ header p span {
   color: var(--moksi-blue);
 }
 .contact .socials {
+  margin-top: 30px;
   display: flex;
+  justify-content: center;
 }
 .contact .icon {
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
+}
+.contact .icon:nth-last-of-type(2) {
+  margin: 0 15px;
 }
 
 @media (min-width: 414px) {
   .contact {
     padding: 60px 15px;
+  }
+  .contact .icon {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -328,11 +299,25 @@ header p span {
   .contact {
     padding: 75px 15px;
   }
+  .contact .socials {
+    margin-top: 45px;
+  }
+  .contact .icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media (min-width: 768px) {
   .contact {
     padding: 90px 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact .icon {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -347,7 +332,6 @@ footer {
 footer .container {
   margin-left: auto;
   margin-right: auto;
-  /* max-width: 700px; */
 }
 
 footer .flex {
