@@ -15,7 +15,7 @@
   --vary-black: "VaryProBlack";
   --vary-light: "VaryProLight";
   --fz-xl: 5.5rem;
-  --fz-lg: 1.4rem;
+  --fz-lg: 1.2rem;
   --fz-md: 1.2rem;
   --fz-rg: 1rem;
   --fz-sm: 0.85rem;
@@ -24,7 +24,7 @@
 @media (min-width: 375px) {
   :root {
     --fz-xl: 6rem;
-    --fz-lg: 1.6rem;
+    --fz-lg: 1.5rem;
     --fz-md: 1.4rem;
     --fz-rg: 1.2rem;
     --fz-sm: 1rem;
@@ -34,8 +34,8 @@
 @media (min-width: 414px) {
   :root {
     --fz-xl: 7.25rem;
-    --fz-lg: 1.8rem;
-    --fz-md: 1.6rem;
+    --fz-lg: 1.6rem;
+    --fz-md: 1.4rem;
     --fz-rg: 1.2rem;
     --fz-sm: 1rem;
   }
@@ -96,7 +96,6 @@ header h1 {
   font-size: var(--fz-xl);
   font-family: var(--vary-black);
   white-space: nowrap;
-  margin-top: -15px;
   margin-bottom: 30px;
 }
 header p {
