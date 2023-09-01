@@ -1,0 +1,101 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+--social-yellow-lt
+*/
+
+/* ROOT */
+:root {
+  --moksi-orange: #ff6500;
+  --moksi-orange-lt: #ff8f28;
+  --moksi-blue: #070094;
+  --vary-black: "VaryProBlack";
+  --vary-light: "VaryProLight";
+  --social-yellow: #ffd701;
+  --social-yellow-lt: #fdf0a6;
+  --social-pink: #e2519f;
+  --social-pink-lt: #ffbdd9;
+  --social-orange: #ff8f28;
+  --social-orange-lt: #fab16c;
+  --social-blue: #2f50a2;
+  --social-blue-lt: #668fff;
+  --fz-xl: 5.5rem;
+  --fz-lg: 1.2rem;
+  --fz-md: 1.2rem;
+  --fz-rg: 1rem;
+  --fz-sm: 0.85rem;
+}
+
+@media (min-width: 375px) {
+  :root {
+    --fz-xl: 6rem;
+    --fz-lg: 1.5rem;
+    --fz-md: 1.4rem;
+    --fz-rg: 1.2rem;
+    --fz-sm: 1rem;
+  }
+}
+
+@media (min-width: 414px) {
+  :root {
+    --fz-xl: 7.25rem;
+    --fz-lg: 1.6rem;
+    --fz-md: 1.4rem;
+    --fz-rg: 1.2rem;
+    --fz-sm: 1rem;
+  }
+}
+
+/* Galaxy Tab S4 */
+@media (min-width: 712px) {
+  :root {
+    --fz-xl: 12rem;
+    --fz-lg: 2.5rem;
+    --fz-md: 2.2rem;
+    --fz-rg: 1.5rem;
+    --fz-sm: 1rem;
+  }
+}
+
+/* iPad */
+@media (min-width: 768px) {
+  :root {
+    --fz-xl: 14rem;
+    --fz-lg: 3.2rem;
+    --fz-md: 2.6rem;
+    --fz-rg: 1.8rem;
+    --fz-sm: 1rem;
+  }
+}
+
+/* iPad Pro */
+@media (min-width: 1024px) {
+  :root {
+    --fz-xl: 18rem;
+    --fz-lg: 4rem;
+    --fz-md: 3.1rem;
+    --fz-rg: 2rem;
+    --fz-sm: 1rem;
+  }
+}
+
+/* Hide SEO H1 */
+.wdn-text-hidden {
+  font-size: 0;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute !important;
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}

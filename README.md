@@ -1,6 +1,1 @@
-# Todos
-
-Email link
-Images slider
-Check on real devices
-JS animations
+# Staging for Moksi

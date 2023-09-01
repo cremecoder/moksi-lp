@@ -1,0 +1,499 @@
+/* BODY ==============================  */
+body {
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  flex-grow: 1;
+}
+
+.download-btn {
+  text-decoration: none;
+  color: #000000;
+  padding: 0.5em 0.7em;
+  background-color: #b4b4b4;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-btn.orange {
+  background-color: var(--social-orange);
+  color: #ffffff;
+}
+.download-btn.orange::after,
+.download-btn.orange:hover {
+  background-color: var(--social-yellow-lt);
+  color: var(--social-orange);
+}
+.download-btn.orange::after,
+.download-btn.orange:hover .download-icon {
+  stroke: var(--social-orange);
+}
+
+.download-btn.pink {
+  background-color: var(--social-pink);
+  color: #ffffff;
+}
+.download-btn.pink::after,
+.download-btn.pink:hover {
+  background-color: #f89ad1;
+  color: var(--social-pink);
+}
+.download-btn.pink::after,
+.download-btn.pink:hover .download-icon {
+  stroke: var(--social-pink);
+}
+
+.download-btn span {
+  position: relative;
+  bottom: 1px;
+}
+.download-btn .icon-wrapper {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  bottom: 1px;
+}
+
+@media (min-width: 375px) {
+  .download-btn {
+    border-radius: 16px;
+  }
+  .download-btn .icon-wrapper {
+    height: 18px;
+    width: 18px;
+  }
+}
+
+@media (min-width: 712px) {
+  .download-btn {
+    border-radius: 18px;
+  }
+  .download-btn .icon-wrapper {
+    height: 20px;
+    width: 20px;
+    bottom: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  .download-btn {
+    border-radius: 20px;
+  }
+  .download-btn .icon-wrapper {
+    height: 25px;
+    width: 25px;
+    bottom: 1px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .download-btn {
+    border-radius: 24px;
+  }
+  .download-btn .icon-wrapper {
+    height: 30px;
+    width: 30px;
+    bottom: 1px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .download-btn .icon-wrapper {
+    height: 27px;
+    width: 27px;
+    bottom: 2px;
+  }
+}
+
+/* HEADER ==============================  */
+header {
+  background-color: rgba(255, 215, 0, 1.5);
+  padding: 30px 30px;
+  font-size: var(--fz-rg);
+  font-family: var(--vary-light);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+header .one {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+header .one .out-social-logo {
+  margin-bottom: 30px;
+}
+
+header .one .split p {
+  margin-bottom: 25px;
+}
+
+header .one .split .download-btn {
+  width: 50%;
+}
+
+header .one img,
+header .two img {
+  max-width: 100%;
+}
+
+@media (min-width: 414px) {
+  header .one .split .download-btn {
+    width: 45%;
+  }
+}
+
+@media (min-width: 568px) {
+  header {
+    padding: 30px 45px;
+  }
+  header .one .out-social-logo {
+    margin-bottom: 45px;
+  }
+  header .one .split {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  header .one .split p {
+    flex-basis: 60%;
+  }
+  header .one .split .download-btn {
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  header .one .split p {
+    flex-basis: 50%;
+  }
+  header .one .split .download-btn {
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    padding: 60px 100px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header .one {
+    flex-basis: 30%;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+  header .one .out-social-logo {
+    margin-bottom: 0px;
+  }
+  header .one .split {
+    flex-direction: column;
+  }
+  header .one .split p {
+    margin-bottom: 45px;
+  }
+  header .one .split .download-btn {
+    width: 100%;
+    max-width: 100%;
+  }
+  header .two {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 1138px) {
+  header .one {
+    flex-basis: 35%;
+  }
+  header .one .split p {
+    flex-basis: 100%;
+    width: 75%;
+    margin-bottom: 60px;
+  }
+  header .one .split .download-btn {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1366px) {
+  header .one .split .download-btn {
+    width: 60%;
+  }
+}
+
+/* MIX ==============================  */
+.mix img {
+  max-width: 100%;
+  outline: none;
+  border: none;
+}
+
+/* DETAILS ==============================  */
+.details {
+  padding: 30px 30px;
+  background-color: var(--social-pink-lt);
+  color: var(--social-pink);
+  font-family: var(--vary-light);
+  font-size: var(--fz-rg);
+}
+
+.details h2 {
+  font-size: var(--fz-lg);
+  font-family: var(--vary-black);
+  margin-bottom: 10px;
+}
+
+.details .one {
+  margin-bottom: 20px;
+}
+
+.details .one p:first-of-type,
+.details .one p:nth-last-of-type(1) {
+  margin-bottom: 15px;
+}
+
+.details .two {
+  display: flex;
+  flex-direction: column;
+}
+
+.details .two .list {
+  margin-bottom: 15px;
+}
+.details .two .download-btn {
+  font-size: var(--fz-rg);
+  width: 50%;
+}
+
+.details .two .list p {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--social-pink);
+  width: 60%;
+}
+
+.details .two .list ul {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+  border-bottom: 1px solid var(--social-pink);
+  width: 60%;
+}
+
+.details .two .list ul li {
+  white-space: nowrap;
+}
+
+@media (min-width: 568px) {
+  .details {
+    padding: 30px 45px;
+  }
+  .details h2 {
+    margin-bottom: 15px;
+  }
+  .details .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .details .flex .one {
+    flex-basis: 55%;
+  }
+  .details .flex .two {
+    flex-basis: 35%;
+  }
+  .details .flex .two .list p {
+    width: 100%;
+  }
+  .details .flex .two .list ul {
+    width: 100%;
+  }
+  .details .flex .two .download-btn {
+    width: 80%;
+  }
+}
+
+@media (min-width: 712px) {
+  .details {
+    padding: 60px 45px;
+  }
+  .details h2 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .details {
+    padding: 60px 100px;
+  }
+  .details .flex .two {
+    flex-basis: 30%;
+  }
+}
+
+@media (min-width: 1138px) {
+  .details h2 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .details .flex .two .download-btn {
+    width: 70%;
+  }
+}
+
+/* SLIDER ==============================  */
+.embla {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  height: 100%;
+}
+.embla__slide > img {
+  max-width: 100%;
+}
+
+@media (min-width: 712px) {
+  .embla__slide {
+    flex: 0 0 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .embla {
+  }
+  .embla__slide {
+    flex: 0 0 75%;
+  }
+}
+
+/* GALLERY ==============================  */
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery .posters img {
+  max-width: 100%;
+}
+
+.gallery .flex-two {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery .flex-two img {
+  max-width: 100%;
+}
+
+@media (min-width: 712px) {
+  .gallery .flex-two {
+    display: flex;
+    flex-direction: row;
+  }
+  .gallery .flex-two img {
+    max-width: 50%;
+  }
+}
+
+/* FOOTER ==============================  */
+footer {
+  background-color: var(--social-blue-lt);
+  padding: 30px 15px;
+}
+
+footer .logo {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+footer .logo .pre-span {
+  display: block;
+  font-size: 13px;
+  font-family: var(--vary-light);
+  color: var(--moksi-blue);
+  margin-bottom: 10px;
+}
+
+footer .logo a {
+  display: block;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+footer .logo a img {
+  max-width: 100%;
+}
+
+footer .socials {
+  display: flex;
+  justify-content: center;
+}
+footer .icon {
+  width: 30px;
+  height: 30px;
+}
+footer .icon:nth-last-of-type(2) {
+  margin: 0 10px;
+}
+
+@media (min-width: 375px) {
+  footer .logo .pre-span {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 640px) {
+  footer .logo .pre-span {
+    font-size: 18px;
+  }
+  footer .logo a {
+    max-width: 40%;
+  }
+  footer .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  footer .logo .pre-span {
+    font-size: 20px;
+  }
+  footer .logo a {
+    max-width: 30%;
+  }
+  footer .icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer .logo a {
+    max-width: 25%;
+  }
+  footer .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
