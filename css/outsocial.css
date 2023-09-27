@@ -473,13 +473,13 @@ header .two img {
   padding: 7px 7px;
   transition: 0.3s;
 }
-.share .icons-container .icon::after {
+.share .icons-container .icon:nth-last-of-type(2):after {
   position: absolute;
   display: block;
   top: 50px;
   bottom: 0;
   content: "";
-  background-color: transparent;
+  background-color: var(--social-orange);
   align-self: center;
   width: 40px;
   height: 20px;
