@@ -228,11 +228,26 @@ header .two img {
   }
 }
 
-/* MIX ==============================  */
-.mix img {
+/* FILM ==============================  */
+.out-social-film {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff6f58;
+  height: 300px;
+}
+.out-social-film span {
+  font-family: var(--vary-light);
+  font-size: var(--fz-lg);
+  color: #ffffff;
+}
+
+/* GIF ==============================  */
+.out-social-gif {
+  line-height: 0;
+}
+.out-social-gif img {
   max-width: 100%;
-  outline: none;
-  border: none;
 }
 
 /* DETAILS ==============================  */
@@ -350,10 +365,12 @@ header .two img {
 }
 
 /* SLIDER ==============================  */
-.embla {
+.embla-one,
+.embla-two {
   display: block;
   overflow: hidden;
   width: 100%;
+  line-height: 0;
 }
 .embla__container {
   display: flex;
@@ -387,6 +404,7 @@ header .two img {
 
 /* GALLERY ==============================  */
 .gallery {
+  line-height: 0;
   display: flex;
   flex-direction: column;
 }
@@ -412,6 +430,75 @@ header .two img {
   .gallery .flex-two img {
     max-width: 50%;
   }
+}
+
+/* MIX ==============================  */
+.mix {
+  line-height: 0;
+}
+.mix img {
+  max-width: 100%;
+  outline: none;
+  border: none;
+}
+
+/* SHARE ==============================  */
+.share {
+  background-color: var(--social-yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 15px 45px 15px;
+}
+.share h3 {
+  font-family: var(--vary-black);
+  font-size: var(--fz-md);
+  color: var(--social-orange);
+  text-align: center;
+  margin-bottom: 30px;
+}
+.share h3 span {
+  display: block;
+}
+.share .icons-container {
+  background-color: var(--social-orange);
+  display: flex;
+}
+.share .icons-container .icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  padding: 7px 7px;
+  transition: 0.3s;
+}
+.share .icons-container .icon::after {
+  position: absolute;
+  display: block;
+  top: 50px;
+  bottom: 0;
+  content: "";
+  background-color: transparent;
+  align-self: center;
+  width: 40px;
+  height: 20px;
+  border-style: solid;
+  border-color: transparent var(--social-yellow);
+  border-width: 20px 20px 0px 20px;
+  transition: 0.3s;
+}
+.share .icons-container .icon:hover svg .share-bg {
+  fill: var(--social-orange);
+}
+.share .icons-container .icon:hover svg .share-shape {
+  fill: #ffffff;
+}
+.share .icons-container .icon:hover {
+  background-color: var(--social-yellow-lt);
+}
+.share .icons-container .icon:hover::after {
+  background-color: var(--social-yellow-lt);
 }
 
 /* FOOTER ==============================  */
