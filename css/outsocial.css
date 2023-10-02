@@ -269,6 +269,10 @@ header .two img {
   margin-bottom: 20px;
 }
 
+.details .one p {
+  line-height: 1.1;
+}
+
 .details .one p:first-of-type,
 .details .one p:nth-last-of-type(1) {
   margin-bottom: 15px;
